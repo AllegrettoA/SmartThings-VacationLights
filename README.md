@@ -4,7 +4,7 @@ Simulate home lighting by randomly turning on &amp; off lights
 ### Background
 This is a Python3 script which replaces the functionality of Groovy smartapp Vacation Lighting Director ([vacation-lighting-director.groovy](https://github.com/SmartThingsCommunity/SmartThingsPublic/tree/master/smartapps/tslagle13/vacation-lighting-director.src)).
 
-The new SmartThings platform requires smartapps be run outside the SmartThings platform such as AWS or Node.js.  In my opinion, this is exceedingly complex compared to the original groovy-based system.  This Python script needs only a simple platform such as a Raspberry PI, Diskstation, etc.  It runs in a periodic loop and does not create any event subscriptions/handlers.  Hopefully someone can replicate this functionality in a Lua-based driver that runs on the hub.
+The new SmartThings platform requires smartapps be run outside the SmartThings platform such as AWS or Node.js.  In my opinion, this is exceedingly complex compared to the original groovy-based system.  This Python script needs only a simple platform such as a Raspberry PI, Diskstation, etc.  It runs in a periodic loop and does not create any event subscriptions/handlers.  Some solutions were based on comples RulesAIP configuration which also required SharpTools subscription.  Hopefully someone can replicate this Python functionality in a Lua-based driver that runs on the hub.
 
 ### Setup
 Configuration settings are provided by editing the Python script (VacationLights.py) using a text editor or Python editor such as Thonny.
