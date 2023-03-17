@@ -2,9 +2,9 @@
 Simulate home lighting by randomly turning on &amp; off lights
 
 ### Background
-This is a Python3 script which replaces the functionality of Groovy smartapp Vacation Lighting Director ([vacation-lighting-director.groovy](https://github.com/SmartThingsCommunity/SmartThingsPublic/tree/master/smartapps/tslagle13/vacation-lighting-director.src)).
+This is a Python3 script which replaces the functionality of Groovy smartapp Vacation Lighting Director ([vacation-lighting-director.groovy](https://github.com/SmartThingsCommunity/SmartThingsPublic/tree/master/smartapps/tslagle13/vacation-lighting-director.src)).  Python scripts are free and can run on most platforms.
 
-The new SmartThings platform requires smartapps be run outside the SmartThings platform such as AWS or Node.js.  In my opinion, this is exceedingly complex compared to the original groovy-based system.  This Python script needs only a simple platform such as a Raspberry PI, Diskstation, etc.  It runs in a periodic loop and does not create any event subscriptions/handlers.  Some solutions were based on comples RulesAIP configuration which also required SharpTools subscription.  Hopefully someone can replicate this Python functionality in a Lua-based driver that runs on the hub.
+The new SmartThings platform requires smartapps be run outside the SmartThings platform such as AWS Lambda and Webhook as connected service.  In my opinion, this is exceedingly complex compared to the original Groovy-based system.  Another solution is based on complex Rules AIP configuration which also requires SharpTools subscription. This Python script needs only a simple platform such as a Raspberry PI, Diskstation, laptop, etc.  It runs in a periodic loop and does not create any event subscriptions/handlers.  Python was most straightforward solution for me, although others may find it complex if they are not familiar with running Python scripts.  Hopefully someone can replicate this Python functionality in a Lua-based driver that runs on the hub.
 
 ### Setup
 Configuration settings are provided by editing the Python script (VacationLights.py) using a text editor or Python editor such as Thonny.
