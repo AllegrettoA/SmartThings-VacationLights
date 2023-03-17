@@ -25,4 +25,9 @@ Configuration settings are provided by editing the Python script (VacationLights
 
 8. **VacationLightsEndHour**.  THis setting specifies the hour that vacation lights turn off.
 
+9. **Run Script**.  Either use command tool to run Python script or add to your startup file.  To run the script, enter command '*python3 /{your path}/VacationLights.py &*'.  To run automatically after reboot, for Raspberry PI you can modify rc.local file with command '*sudo nano /etc/rc.local*', then add this code to the bottom:
 
+    ```
+    # Run SmartThings VacationLights Python script
+    sleep 30 && python3 /{your path}/VacationLights.py &
+    ```
